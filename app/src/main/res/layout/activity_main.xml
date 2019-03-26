@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff52a287"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title_bar"></include>
+
+    <com.example.waterwaveview.view.WaterWaveView
+        android:id="@+id/water_wave_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Current water consumption"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/last_month_use_water"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="20dp"
+        android:text="Last month use:346.3t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="395dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include">
+
+        <ImageView
+            android:id="@+id/water_drop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/bg_water_drop_radius"
+            app:srcCompat="@drawable/water_drop" />
+
+        <TextView
+            android:id="@+id/tv_show_water_supply_company"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="9dp"
+            android:text="Chongqing shapingba water conservancy co. LTD" />
+
+        <TextView
+            android:id="@+id/water_charges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="36dp"
+            android:text="Current Balance of Water Charges"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="300dp"
+            android:text="2019.3.12 00:00" />
+
+        <TextView
+            android:id="@+id/tv_charges_left_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="115dp"
+            android:textSize="56dp"
+            android:text="366.45" />
+
+        <ImageView
+            android:id="@+id/renmingbi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="287dp"
+            android:layout_marginTop="95dp"
+            app:srcCompat="@drawable/renmingbi" />
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="3dp"
+            android:text="Address:No.55Shapingba District" />
+
+        <Button
+            android:id="@+id/btn_pay_the_fees"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_water_drop_radius"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="125dp"
+            android:text="PAY" />
+
+        <ImageView
+            android:id="@+id/btn_down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/down" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="395dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_radius1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/water_drop1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/bg_water_drop_radius1"
+            app:srcCompat="@drawable/water_drop" />
+
+        <TextView
+            android:id="@+id/tv_show_water_supply_company1"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="9dp"
+            android:text="Chongqing shapingba water conservancy co. LTD" />
+
+        <TextView
+            android:id="@+id/water_charges1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="36dp"
+            android:text="Current Balance of Water Charges"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_update_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="300dp"
+            android:text="2019.3.12 00:00" />
+
+        <TextView
+            android:id="@+id/tv_charges_left_show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="115dp"
+            android:textSize="56dp"
+            android:text="366.45" />
+
+        <ImageView
+            android:id="@+id/renmingbi1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="287dp"
+            android:layout_marginTop="95dp"
+            app:srcCompat="@drawable/renmingbi" />
+
+        <TextView
+            android:id="@+id/tv_adress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="3dp"
+            android:text="Address:No.55Shapingba District" />
+
+        <Button
+            android:id="@+id/btn_pay_the_fees1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_water_drop_radius1"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="125dp"
+            android:text="PAY" />
+
+        <ImageView
+            android:id="@+id/btn_down1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/down" />
+    </FrameLayout>
+
+    <!--<include-->
+        <!--android:id="@+id/user_balanceleft_pay1"-->
+        <!--layout="@layout/user_balanceleft_pay"-->
+        <!--tools:layout_editor_absoluteX="0dp"-->
+        <!--tools:layout_editor_absoluteY="431dp"></include>-->
+</android.support.constraint.ConstraintLayout>
