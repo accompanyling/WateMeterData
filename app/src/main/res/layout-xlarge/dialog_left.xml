@@ -25,8 +25,6 @@
             android:id="@+id/dlg_image1"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:onClick="click_to_tip"
             app:srcCompat="@drawable/shebeiguanli"
             tools:layout_editor_absoluteX="30dp"
             tools:layout_editor_absoluteY="101dp" />
@@ -48,19 +46,18 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
 
         <ImageView
             android:id="@+id/dlg_image2"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/icon_zhanghao"
             tools:layout_editor_absoluteX="47dp"
             tools:layout_editor_absoluteY="214dp" />
@@ -94,7 +91,6 @@
             android:id="@+id/dlg_image3"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/guangbo"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="298dp" />
@@ -127,7 +123,6 @@
             android:id="@+id/dlg_image4"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/jinggao"
             tools:layout_editor_absoluteX="10dp"
             tools:layout_editor_absoluteY="375dp" />
@@ -142,5 +137,4 @@
             tools:layout_editor_absoluteX="107dp"
             tools:layout_editor_absoluteY="356dp" />
     </TableRow>
-
 </android.support.constraint.ConstraintLayout>
